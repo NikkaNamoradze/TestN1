@@ -17,24 +17,23 @@ fun main() {
     //ლუწი რიცხვების ჯამი 100-ის ჩათვლით
     println(mathObject.evenNumbersSum(100))
 
-    //სტრიქონის შებრუნება
-    println(stringReverser("547810"))
-    println(stringReverser("ნიკა"))
+    //რიცხვის შებრუნება
+    reverser(4560)
 
     //პალინდრომზე შემოწმება
     checkPalindrome("ნიკა")
     checkPalindrome("ნიკა აკინ")
 
-
 }
 
-private fun stringReverser(str: String): String {
+private fun reverser(x: Int){
 
-    if (str.last() == '0') {
-        return str.reversed().removeRange(0..0)
+    if (x.toString().last() == '0') {
+        println(x.toString().reversed().removeRange(0..0))
+    }else{
+        println(x.toString().reversed())
     }
 
-    return str.reversed()
 
 }
 
